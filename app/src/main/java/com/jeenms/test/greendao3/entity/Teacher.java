@@ -2,6 +2,7 @@ package com.jeenms.test.greendao3.entity;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
+import org.greenrobot.greendao.annotation.Generated;
 
 /**
  * Created by zhangdy on 2016/7/11.
@@ -14,13 +15,14 @@ public class Teacher {
     private String name;
     private int age;
 
+    public Teacher() {
+    }
+
+    @Generated(hash = 81005218)
     public Teacher(long id, String name, int age) {
         this.id = id;
         this.name = name;
         this.age = age;
-    }
-
-    public Teacher() {
     }
 
     public long getId() {
